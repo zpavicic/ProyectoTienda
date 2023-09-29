@@ -37,7 +37,7 @@ public class ActivityProduct extends AppCompatActivity {
         btnAgregar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(ActivityProduct.this, "Producto agregado al carrito", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ActivityProduct.this, "Producto agregado a tu carrito", Toast.LENGTH_SHORT).show();
                 Intent agregarAdmin = new Intent(ActivityProduct.this, ActivityLibrosAdmin.class);
                 Intent agregarUser = new Intent(ActivityProduct.this, ActivityLibrosUser.class);
                 if(user1.getRole().equals("admin")){
