@@ -16,7 +16,7 @@ public class ActivityProduct extends AppCompatActivity {
     
     private Button btnAgregar;
 
-    public User user1 = new User("zeljko", "pavicic", 21, "cliente");
+    public User u = new User();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,11 +38,11 @@ public class ActivityProduct extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(ActivityProduct.this, "Producto agregado a tu carrito", Toast.LENGTH_SHORT).show();
-                Intent agregarAdmin = new Intent(ActivityProduct.this, ActivityLibrosAdmin.class);
-                Intent agregarUser = new Intent(ActivityProduct.this, ActivityLibrosUser.class);
-                if(user1.getRole().equals("admin")){
+                if(u.getRol().equals("admin")){
+                    Intent agregarAdmin = new Intent(ActivityProduct.this, ActivityLibrosAdmin.class);
                     startActivity(agregarAdmin);
                 } else {
+                    Intent agregarUser = new Intent(ActivityProduct.this, ActivityLibrosUser.class);
                     startActivity(agregarUser);
                 }
             }

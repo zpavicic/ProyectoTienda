@@ -2,16 +2,29 @@ package com.example.aplicacion;
 
 public class User {
 
+    private String uid;
     private String nombre;
-    private String apellido;
-    private int edad;
-    private String role;
+    private String correo;
+    private String password;
+    private String rol;
+    public User(){
 
-    public User(String nombre, String apellido, int edad, String role) {
+    }
+
+    public User(String uid, String nombre, String correo, String password, String rol) {
+        this.uid = uid;
         this.nombre = nombre;
-        this.apellido = apellido;
-        this.edad = edad;
-        this.role = role;
+        this.correo = correo;
+        this.password = password;
+        this.rol = rol;
+    }
+
+    public String getUid() {
+        return uid;
+    }
+
+    public void setUid(String uid) {
+        this.uid = uid;
     }
 
     public String getNombre() {
@@ -22,27 +35,31 @@ public class User {
         this.nombre = nombre;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getCorreo() {
+        return correo;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setCorreo(String correo) {
+        this.correo = correo;
     }
 
-    public int getEdad() {
-        return edad;
+    public String getPassword() {
+        return password;
     }
 
-    public void setEdad(int edad) {
-        this.edad = edad;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    public String getRole() {
-        return role;
+    public String getRol() {
+        return rol;
     }
 
-    public void setRole(String role) {
-        this.role = role;
+    public void setRol(String rol) {
+        this.rol = rol;
+    }
+
+    public void makeUser(User u){
+        u.setRol("user");
     }
 }

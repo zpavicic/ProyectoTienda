@@ -34,8 +34,8 @@ public class ActivityHomeUser extends AppCompatActivity {
         bannerCategoria.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ActivityHomeUser.this, ActivityFunkosUser.class);
-                startActivity(intent);
+                Intent funkos = new Intent(ActivityHomeUser.this, ActivityFunkosUser.class);
+                startActivity(funkos);
             }
         });
 

@@ -14,7 +14,6 @@ public class ActivityFormCategoria extends AppCompatActivity {
 
     private TextView textViewVolver;
     private Button btnCrear;
-
     private EditText etNombre;
 
     @Override

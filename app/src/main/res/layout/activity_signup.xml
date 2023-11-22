@@ -36,7 +36,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextUsername"
+                android:id="@+id/etUsername"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="32dp"
@@ -53,7 +53,7 @@
                 android:textColor="@color/black"/>
 
             <EditText
-                android:id="@+id/editTextEmail"
+                android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="32dp"
@@ -70,7 +70,7 @@
                 android:textColor="@color/black"/>
 
             <EditText
-                android:id="@+id/editTextPassword"
+                android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="32dp"
@@ -87,7 +87,7 @@
                 android:textColor="@color/black"/>
 
             <EditText
-                android:id="@+id/editTextRepetirPassword"
+                android:id="@+id/etConfirmPassword"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="32dp"
@@ -104,7 +104,7 @@
                 android:textColor="@color/black"/>
 
             <ImageView
-                android:id="@+id/loginButton"
+                android:id="@+id/signUpButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
@@ -113,7 +113,7 @@
                 android:src="@drawable/btn_arrow2" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/tvVolver"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Volver"
